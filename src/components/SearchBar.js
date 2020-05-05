@@ -9,30 +9,29 @@ export default class SearchBar extends Component {
 
   onFormSubmit = (event) => {
     event.preventDefault();
-
-    // call callback from parent component
+    this.props.onFormSubmit(this.state.term);
   };
 
   render() {
     return (
-      <div style={{ marginTop: "10px" }} className="search-bar ui segment">
-        <form className="ui form">
-          <div className="field">
-            <label htmlFor="">Video Search</label>
+      <div style={{ marginTop: "10px" }} className=" search-bar ui segment">
+        <form
+          onSubmit={this.onFormSubmit}
+          className="row align-items-center ui form"
+        >
+          <div className="field col-10 col-lg-11 ">
             <input
               value={this.state.term}
               onChange={this.onInputChange}
               type="text"
-              style={{ width: "980px", marginRight: "5px" }}
             />
-            <button
-              className="btn btn-outline-danger"
-              type="submit"
-              onSubmit={this.onFormSubmit}
-            >
-              Search
-            </button>
           </div>
+          <button
+            className="col-2 col-lg-1 btn btn-outline-danger "
+            type="submit"
+          >
+            Submit
+          </button>
         </form>
       </div>
     );

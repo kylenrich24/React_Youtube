@@ -5,12 +5,12 @@ const Nav = () => {
     <div>
       <nav
         className="navbar navbar-expand-lg navbar-dark"
-        style={{ backgroundColor: "red" }}
+        style={{ backgroundColor: "rgb(219, 29, 0)" }}
       >
         <div className="container">
           <a className="navbar-brand" href="#">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Youtube_icon.svg/1200px-Youtube_icon.svg.png"
+              src="https://cdn.onlinewebfonts.com/svg/img_427178.png"
               width="45"
               height="45"
               alt=""
