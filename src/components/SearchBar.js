@@ -19,7 +19,7 @@ export default class SearchBar extends Component {
           onSubmit={this.onFormSubmit}
           className="row align-items-center ui form"
         >
-          <div className="field col-10 col-lg-11 ">
+          <div className="field  col-sm-10 col-lg-11 ">
             <input
               value={this.state.term}
               onChange={this.onInputChange}
@@ -27,7 +27,7 @@ export default class SearchBar extends Component {
             />
           </div>
           <button
-            className="col-2 col-lg-1 btn btn-outline-danger "
+            className=" col-sm-2 col-lg-1 btn btn-outline-danger "
             type="submit"
           >
             Submit
