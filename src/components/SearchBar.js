@@ -14,12 +14,9 @@ export default class SearchBar extends Component {
 
   render() {
     return (
-      <div style={{ marginTop: "10px" }} className=" search-bar ui segment">
-        <form
-          onSubmit={this.onFormSubmit}
-          className="row align-items-center ui form"
-        >
-          <div className="field  col-sm-10 col-lg-11 ">
+      <div style={{ marginTop: "10px" }} className="search-bar ui segment">
+        <form onSubmit={this.onFormSubmit} className="row  ui form">
+          <div className="field ml-4 ml-sm-0  col-sm-10 col-lg-11 ">
             <input
               value={this.state.term}
               onChange={this.onInputChange}
@@ -27,7 +24,7 @@ export default class SearchBar extends Component {
             />
           </div>
           <button
-            className=" col-sm-2 col-lg-1 btn btn-outline-danger "
+            className="ml-4 ml-sm-0 col-sm-2 col-lg-1 btn btn-outline-danger "
             type="submit"
           >
             Submit

@@ -20,7 +20,7 @@ const VideoDetail = ({ video }) => {
       </div>
 
       <h3 className="ui header">{video.snippet.title}</h3>
-      <div className="ui segment">
+      <div className="ui segment" style={{ marginBottom: "20px" }}>
         <p>{video.snippet.description}</p>
       </div>
     </div>
