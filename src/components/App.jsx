@@ -34,10 +34,10 @@ export default class App extends Component {
           <SearchBar onFormSubmit={this.onTermSubmit} />
           <div className="ui grid">
             <div className="row">
-              <div className="col-lg-9">
+              <div className="ml-5 ml-lg-0 col-lg-9">
                 <VideoDetail video={this.state.selectedVideo} />
               </div>
-              <div className="col-lg-3">
+              <div className="ml-5 ml-lg-0 col-lg-3">
                 <VideoList
                   onVideoSelect={this.onVideoSelect}
                   videos={this.state.videos}
